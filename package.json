@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "db:migration:run": "bun drizzle-kit migrate --config ./drizzle.config.ts",
-    "db:migration:generate": "bun drizzle-kit generate --config ./drizzle.config.ts"
+    "db:migration:generate": "bun drizzle-kit generate --config ./drizzle.config.ts",
+    "start-production": "bun db:migration:run && bun run src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
