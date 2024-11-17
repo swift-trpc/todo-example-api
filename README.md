@@ -1,15 +1,9 @@
 # todo-example-api
 
-To install dependencies:
-
-```bash
-bun install
-```
-
 To run:
 
-```bash
-bun run src/index.ts
+```
+docker-compose build && docker-compose up
 ```
 
-This project was created using `bun init` in bun v1.1.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Then the server will be available on: `http://localhost:8200`
